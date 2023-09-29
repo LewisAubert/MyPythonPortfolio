@@ -1,0 +1,16 @@
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+while not at_goal():
+    if right_is_clear():
+        turn_right()
+        move()
+    elif front_is_clear():
+        move()
+    else:
+        turn_left()
+
+#This looks like quite a straightforward piece of code. This was written to tackle the problem from Reeborg's World under the 'Maze' challenge.
+#Although there is not a lot of code here, the work that went into it was not straightforward. Logic and critical thinking are key here.
